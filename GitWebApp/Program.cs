@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace GitWebApp
 {
@@ -22,6 +16,7 @@ namespace GitWebApp
                 {
                     webBuilder.UseUrls("http://*:1000");
                     webBuilder.UseStartup<Startup>();
+
                 });
     }
 }
